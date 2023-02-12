@@ -1,10 +1,12 @@
-(function (){
-    
+//Get main tag from the document
+
     let mainContent = document.getElementById("main")
     mainContent.setAttribute("class", "container")
-    
+//set title for the page
+   
     let title = document.getElementById("title")
     title.textContent = "WEBD 6201 LAB 1 PRODUCTS"
+// create and set text content for headings and paragraphs
 
     let firstHeading = document.createElement("h1")
     firstHeading.textContent = "Project 1: OOP II - Ticket Customer Management System"
@@ -21,6 +23,7 @@
 
 
     
+//create and set attributes for image variables
    
     var img1 = new Image()
     img1.setAttribute("width", "500")
@@ -34,6 +37,7 @@
     img3.setAttribute("width", "250")
     img3.setAttribute("height", "250")
     img3.src='https://cdn.pixabay.com/photo/2017/08/31/04/01/d20-2699387_1280.png'
+//append paragraphs to the page content
     
     mainContent.appendChild(firstHeading)
     mainContent.appendChild(firstParagraph)
@@ -45,10 +49,14 @@
     mainContent.appendChild(thirdParagraph)
     mainContent.appendChild(img3)
 
+//set bottom nav bar
+
     let bottomNavBar = document.createElement("NAV")
     bottomNavBar.setAttribute("class", "navbar fixed-bottom bg-light")
     bottomNavBar.textContent = "@Copyright 2023"
     mainContent.appendChild(bottomNavBar)
+
+//switch "Products" to "Projects" in navbar
 
     let products = (document.getElementById("products").textContent)
         console.log(products)
@@ -60,6 +68,7 @@
      
 
         
+// creates human resources link and icon, appends the two and inserts in the navbar before the 5th element in the list       
         
     let humanResourcesIcon = document.createElement("i")
     humanResourcesIcon.setAttribute("class", "fa-solid fa-person")
@@ -79,6 +88,3 @@
    
 
 
-
-
-})()

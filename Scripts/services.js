@@ -1,11 +1,10 @@
-(function(){
-
+//Get main tag from the document
     let mainContent = document.getElementById("main")
     mainContent.setAttribute("class", "container")
-
+//set title for the page
     let title = document.getElementById("title")
     title.textContent = "WEBD 6201 LAB 1 SERVICES"
-
+// create and set text content for headings and paragraphs
     let firstHeading = document.createElement("h1")
     firstHeading.textContent = "Service 1: Web Design"
     let firstParagraph = document.createElement("p")
@@ -18,7 +17,7 @@
     thirdHeading.textContent = "Service 3: Code Review"
     let thirdParagraph = document.createElement("p")
     thirdParagraph.textContent = "We also provide code review services. Give us your proprietary code that isn't working and we'll be able to find the bug for you."
-    
+//create and set attributes for image variables
     var img1 = new Image()
     img1.setAttribute("width", "200")
     img1.setAttribute("height", "200")
@@ -31,7 +30,8 @@
     img3.setAttribute("width", "200")
     img3.setAttribute("height", "200")
     img3.src='https://www.nicepng.com/png/detail/861-8614750_code-icon-icon.png'
-    
+   
+//append paragraphs and images to the page content
     mainContent.appendChild(firstHeading)
     mainContent.appendChild(firstParagraph)
     mainContent.appendChild(img1)
@@ -42,11 +42,12 @@
     mainContent.appendChild(thirdParagraph)
     mainContent.appendChild(img3)
 
+//set bottom nav bar
     let bottomNavBar = document.createElement("NAV")
     bottomNavBar.setAttribute("class", "navbar fixed-bottom bg-light")
     bottomNavBar.textContent = "@Copyright 2023"
     mainContent.appendChild(bottomNavBar)
-
+//switch "Products" to "Projects" in navbar
     let products = (document.getElementById("products").textContent)
         console.log(products)
         switch (products) {
@@ -57,7 +58,7 @@
      
 
         
-        
+// creates human resources link and icon, appends the two and inserts in the navbar before the 5th element in the list       
         let humanResourcesIcon = document.createElement("i")
         humanResourcesIcon.setAttribute("class", "fa-solid fa-person")
         
@@ -68,7 +69,7 @@
         let humanResources = document.createElement("li")
         humanResources.setAttribute("class", "nav-item")
         humanResourcesLink.innerHTML = "<i class = fa-solid fa-person></i>Human Resources"
-        humanResourcesLink.setAttribute("href", "")
+        humanResourcesLink.setAttribute("href", "#")
         humanResourcesLink.setAttribute("class", "nav-link")
         humanResourcesLink.insertBefore(humanResourcesIcon, humanResourcesLink.children[0])
         humanResources.appendChild(humanResourcesLink)
@@ -77,9 +78,3 @@
     
 
 
-
-
-
-
-
-}())
