@@ -18,6 +18,10 @@
         
 
         document.body.style.backgroundImage = "url('https://img.freepik.com/premium-photo/pink-sky-background-with-white-clouds-fantasy-cloudy-sky-abstract-image-use-background_156745-959.jpg?w=2000')"
+        let bottomNavBar = document.createElement("NAV")
+        bottomNavBar.setAttribute("class", "navbar fixed-bottom bg-light")
+        bottomNavBar.textContent = "@Copyright 2023"
+        mainContent.appendChild(bottomNavBar)
 
         let products = (document.getElementById("products").textContent)
         console.log(products)
@@ -28,10 +32,7 @@
         }
      
 
-        let bottomNavBar = document.createElement("NAV")
-        bottomNavBar.setAttribute("class", "navbar fixed-bottom bg-light")
-        bottomNavBar.textContent = "@Copyright 2023"
-        mainContent.appendChild(bottomNavBar)
+        
         
         let humanResourcesIcon = document.createElement("i")
         humanResourcesIcon.setAttribute("class", "fa-solid fa-person")
