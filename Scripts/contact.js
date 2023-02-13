@@ -3,10 +3,10 @@ let mainContent = document.getElementById("main")
 mainContent.setAttribute("class", "container")
 //set bottom nav bar
 
-    let bottomNavBar = document.createElement("NAV")
-    bottomNavBar.setAttribute("class", "navbar fixed-bottom bg-light")
-    bottomNavBar.textContent = "@Copyright 2023"
-    mainContent.appendChild(bottomNavBar)
+let bottomNavBar = document.createElement("NAV")
+bottomNavBar.setAttribute("class", "navbar fixed-bottom bg-light")
+bottomNavBar.textContent = "@Copyright 2023"
+mainContent.appendChild(bottomNavBar)
 
 //switch "Products" to "Projects" in navbar
 
