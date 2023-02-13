@@ -55,8 +55,7 @@ let products = (document.getElementById("products").textContent)
         case "Products":
             document.getElementById("products").innerHTML = `<i class="fa-solid fa-bag-shopping"></i>Projects`
             break;
-        }
-     
+    }
 
         
 // creates human resources link and icon, appends the two and inserts in the navbar before the 5th element in the list       
